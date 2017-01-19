@@ -136,11 +136,16 @@ function changeColors(color) {
 	}
 }
 
+
+//The three following functions generate a random rgb color that is contained within the colors array.
+
+//This function determines the winning color pick chosen at random from the colors array
 function pickColor() {
 	var random = Math.floor(Math.random() * colors.length);
 	return colors[random];
 }
 
+//makes an array that contains the returned rgb from randomColor() 
 function generateRandomColors(num) {
 	//make an array
 	var arr = []
@@ -154,6 +159,9 @@ function generateRandomColors(num) {
 	return arr;
 
 }
+
+
+//generates a random rgb that is then used in generateRandomColors() 
 
 function randomColor() {
 	//pick a "red" from 0 - 255
