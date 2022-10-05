@@ -19,7 +19,6 @@ function init() {
 	reset();
 
 }
-
 function setupModeButtons() {
 	for(var i = 0; i < modeButtons.length; i++) {
 		modeButtons[i].addEventListener("click", function() {
